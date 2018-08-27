@@ -30,6 +30,7 @@
     methods: {
       removeTask(index) {
         eventBus.list.splice(index, 1);
+        console.log('test');
       },
       editTask(index, el) {
         eventBus.editedTask = eventBus.list[index].task;
